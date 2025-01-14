@@ -63,6 +63,27 @@ The project follows a modular structure with:
 - Vite
 - Etherscan API
 
+## Testing
+
+The project uses Vitest and React Testing Library for testing. Tests are located in `__tests__` directories next to the components they test.
+
+To run tests:
+```bash
+# Run tests once
+npm test
+
+# Run tests in watch mode
+npm run test:watch
+
+# Run tests with coverage
+npm run test:coverage
+```
+
+Test files follow these conventions:
+- Component tests: `src/components/__tests__/*.test.tsx`
+- Page tests: `src/pages/__tests__/*.test.tsx`
+- Hook tests: `src/hooks/__tests__/*.test.tsx`
+
 ## Development
 
 This project is built with Vite for fast development and optimal production builds. It uses TypeScript for type safety and React for the UI components.
